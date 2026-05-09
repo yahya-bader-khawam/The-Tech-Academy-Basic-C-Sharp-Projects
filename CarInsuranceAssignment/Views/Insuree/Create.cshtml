@@ -1,0 +1,50 @@
+@model CarInsurance.Models.Insuree
+
+<h2>Get a Car Insurance Quote</h2>
+
+<form asp-action="Create">
+    <div class="form-horizontal">
+        <div class="form-group">
+            <label>First Name</label>
+            <input asp-for="FirstName" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label>Last Name</label>
+            <input asp-for="LastName" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label>Email Address</label>
+            <input asp-for="EmailAddress" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label>Date of Birth</label>
+            <input asp-for="DateOfBirth" type="date" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label>Car Year</label>
+            <input asp-for="CarYear" type="number" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label>Car Make</label>
+            <input asp-for="CarMake" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label>Car Model</label>
+            <input asp-for="CarModel" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label>Have you ever had a DUI?</label>
+            <input asp-for="DUI" type="checkbox" />
+        </div>
+        <div class="form-group">
+            <label>How many speeding tickets?</label>
+            <input asp-for="SpeedingTickets" type="number" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label>Full Coverage?</label>
+            <input asp-for="FullCoverage" type="checkbox" />
+        </div>
+        <br />
+        <input type="submit" value="Calculate Quote" class="btn btn-primary" />
+    </div>
+</form>
